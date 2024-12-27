@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Now Amazing Webpage</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <style>
+        body {
+            background: #000000;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .slider {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .slick-slide img {
+            max-height: 900px;
+            margin: auto;
+            display: block;
+        }
+
+        .slick-prev, .slick-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 0px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 01;
+        }
+
+        .slick-prev {
+            left: 10px;
+        }
+
+        .slick-next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="slider demo">
+            <div style="width:auto; height:auto;"> 
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczOKvQMShPByJrxcEZdvkPKH9hrclYh4DYNonEblquB04V4qVQBzXEBXI0hilUsTSXNhymMehZ0lDmpu6ANtpn4m_ukHv07Q8LEMmaYm5lTf5jAir5MAfAmKzIjJgzubza1ByTGvbl_an3DeAgB45SRs=w718-h1276-s-no-gm?authuser=0" alt="Slide 1"> 
+            </div>
+            <div style="width:auto; height:auto;"> 
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczMJxd2nrBzhuOiF-B9Z0St3L57OKDQGiltXewm9GrLvLK9rfBOs7WzBG24qGMBL8KCXUQ-uCyhcckbEX_1nG-0UIpKZPgAwzcay_BXm6Qu1M7V-yc8CU-mV_Q6m6rir5F1O8oQsdIzFmKVJiFdwK6Re=w718-h1276-s-no-gm?authuser=0" alt="Slide 2"> 
+            </div>
+            <div style="width:auto; height:auto;"> 
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczN2fSqW2rrIE4dkPM1D37qMeQL2BRirsht0lAmyyG87nE6sGvJQZRmtoR-UgQQ8iZzXgFSeIyzHFYJ0fqoKpfnQXHiCgUWCxEGjRyrupxo0YFVxmGfXlm69xC3mlPso8sCxDX-HJerGDzLOmlobto5A=w718-h1276-s-no-gm?authuser=0" alt="Slide 3"> 
+            </div>
+        </div>
+    </center>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($){
+            $('.demo').slick({
+                arrows: true,   // Menampilkan tombol next dan previous
+                dots: true,     // Menampilkan navigasi titik
+                cssEase: "ease-out",
+                autoplay: false // Tidak autoplay
+            });
+        });
+    </script>
+</body>
+</html>
